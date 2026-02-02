@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    padding: 15px;
+}
+
+.card {
+    background: white;
+    padding: 28px 22px;
+    border-radius: 22px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+    width: 100%;
+    max-width: 360px; /* parfait pour A05 / A16 */
+}
+
+h1 {
+    color: #ff4d6d;
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+#question {
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+
+.buttons {
+    position: relative;
+    height: 120px; /* espace pour bouton NON qui bouge */
+}
+
+button {
+    width: 100%;
+    max-width: 220px;
+    padding: 14px 0;
+    font-size: 18px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.yes {
+    background: #ff4d6d;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.no {
+    background: #ddd;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.message {
+    margin-top: 18px;
+    font-size: 16px;
+    color: #ff4d6d;
+    font-weight: bold;
+    min-height: 40px;
+}
+
+/* 📱 Très petits écrans */
+@media (max-width: 360px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    #question {
+        font-size: 17px;
+    }
+}
